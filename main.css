@@ -30,3 +30,58 @@
     display: block;
   }
 }
+
+
+body {
+  font-family: sans-serif;
+  background: #f7f7f7;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.link-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* responsive */
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.link-card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 20px;
+  text-decoration: none;
+  color: #333;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.link-card img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.link-card h2 {
+  font-size: 1.3rem;
+  margin: 10px 0 5px;
+}
+
+.link-card p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Hover-Effekt */
+.link-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
