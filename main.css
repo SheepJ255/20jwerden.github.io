@@ -21,3 +21,9 @@
   background-color: #470000;
   color: rgb(255, 255, 255);
 }
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
