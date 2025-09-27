@@ -32,10 +32,16 @@
 }
 
 
+/* Ganz wichtig: Basis-Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: sans-serif;
   background: #f7f7f7;
-  margin: 0;
   padding: 20px;
 }
 
@@ -44,14 +50,18 @@ h1 {
   margin-bottom: 30px;
 }
 
+
+/* Container für alle Boxen */
 .link-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* responsive */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
-  max-width: 1000px;
-  margin: 0 auto;
+  max-width: 100%;       /* 👈 Verhindert Überbreite */
+  margin: 0 auto;        /* Zentriert bei großen Bildschirmen */
+  overflow-x: hidden;    /* 👈 Keine horizontale Scroll-Leiste */
 }
 
+/* Einzelne Box */
 .link-card {
   background: white;
   border-radius: 16px;
@@ -61,18 +71,21 @@ h1 {
   color: #333;
   text-align: center;
   transition: transform 0.2s, box-shadow 0.2s;
+  width: 100%;          /* 👈 Box darf nicht breiter werden als Spalte */
 }
 
+/* Bild IMMER skalierbar machen */
 .link-card img {
-  width: 80px;
-  height: 80px;
-  object-fit: contain;
-  margin-bottom: 15px;
+  max-width: 100%;      /* 👈 Bild kann nie breiter als Box werden */
+  height: auto;
+  display: block;
+  margin: 0 auto 15px;
 }
 
+/* Text */
 .link-card h2 {
   font-size: 1.3rem;
-  margin: 10px 0 5px;
+  margin-bottom: 5px;
 }
 
 .link-card p {
