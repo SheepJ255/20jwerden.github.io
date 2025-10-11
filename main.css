@@ -14,6 +14,7 @@ h4{
 }
 body {
   font-family: sans-serif;
+  font-style:normal;
   background: #f7f7f7;
   padding: 20px;
 }
@@ -25,6 +26,15 @@ h1 {
 b {
    margin-left: 20px;
   margin-right: 20px;
+}
+
+.seitenbild_1 {
+  position: absolute;
+  top: 100px;
+  right: 0;
+  height: 30em;
+  margin-left: 15px;
+  margin-bottom: 15px;
 }
 
 
