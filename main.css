@@ -44,6 +44,7 @@ ul {
   height: 30em;
   margin-left: 15px;
   margin-bottom: 15px;
+  border-radius: 8px;
 }
 
 @media (max-width: 800px) {
