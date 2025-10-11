@@ -1,0 +1,92 @@
+/* Basis */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth; /* sanftes Scrollen */
+}
+
+body {
+  font-family: sans-serif;
+  color: #222;
+}
+
+/* Navigationsleiste oben fixieren */
+.projekt-nav {
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  display: flex;
+  gap: 20px;
+  background: rgba(255,255,255,0.8);
+  padding: 10px 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  margin-top: 100px;
+}
+
+.projekt-nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.projekt-nav a:hover {
+  color: #0077ff;
+}
+
+/* Jede Projekt-Sektion */
+.projekt {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;          /* ganze Bildschirmhöhe */
+  padding: 100px;
+  background: #f5f5f5;
+  border-bottom: 2px solid #ddd;
+}
+
+/* Bild rechts */
+.projekt img {
+  width: 40%;
+  max-width: 500px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* Text links */
+.projekt .text {
+  width: 50%;
+}
+
+/* Responsive Design */
+@media (max-width: 800px) {
+  .projekt {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 60px 20px;
+  }
+
+  .projekt img {
+    width: 80%;
+    margin-top: 20px;
+  }
+
+  .projekt .text {
+    width: 100%;
+  }
+
+  .projekt-nav {
+    top: 0;
+    border-radius: 0;
+    width: 100%;
+    justify-content: center;
+  }
+}

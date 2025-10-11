@@ -2,22 +2,56 @@
 <head>
     <meta charset="utf-8">
     <title>Johannes Werden Portfolio</title>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="project_styles.css">
     <link rel="stylesheet" href="navbar_styles.css">
     <link rel="icon" type="image/x-icon" href="assets/DTD_Logo.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body>
-    <div class="topnav">
+ <div class="topnav">
   <a href="index.html"><img src="assets/Home.svg" alt="logo" style="width:20px;height:20px;">Home</a>
   <a class="active" href="projects.html"><img src="assets/Projects.svg" alt="logo" style="width:20px;height:20px;">Projects</a>
   <a href="contact.html"><img src="assets/Link.svg" alt="logo" style="width:20px;height:20px;">Links</a>
 </div>
-    <header>
-        <h1>Johannes Werden</h1>
-        <h2>My Computer Science Projects</h2>
-        <a>
-            Who reads that knows I am able to write
-        </a>
-    </header>
+<body>
+    <!-- Navigationsleiste für die Projekt-Buttons -->
+  <nav class="projekt-nav">
+    <a href="#projekt1">Projekt 1</a>
+    <a href="#projekt2">Projekt 2</a>
+    <a href="#projekt3">Projekt 3</a>
+  </nav>
+
+  <!-- Projekt 1 -->
+  <section id="projekt1" class="projekt">
+    <div class="text">
+      <h1>Projekt 1 – Nachhaltigkeit</h1>
+      <p>
+        Dieses Projekt beschäftigt sich mit nachhaltigen Energiequellen
+        und wie wir sie in unseren Alltag integrieren können.
+      </p>
+    </div>
+    <img src="assets/projekt1.jpg" alt="Projekt 1">
+  </section>
+
+  <!-- Projekt 2 -->
+  <section id="projekt2" class="projekt">
+    <div class="text">
+      <h1>Projekt 2 – Raumfahrt</h1>
+      <p>
+        Ein spannendes Projekt über kleine Satelliten und neue Antriebstechnologien.
+      </p>
+    </div>
+    <img src="assets/projekt2.jpg" alt="Projekt 2">
+  </section>
+
+  <!-- Projekt 3 -->
+  <section id="projekt3" class="projekt">
+    <div class="text">
+      <h1>Projekt 3 – Design</h1>
+      <p>
+        Kreatives Webdesign mit Fokus auf Benutzerfreundlichkeit und Ästhetik.
+      </p>
+    </div>
+    <img src="assets/projekt3.jpg" alt="Projekt 3">
+  </section>
+
 </body>
